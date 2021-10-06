@@ -46,11 +46,7 @@ pipeline {
 
     stage('QA Certification') {
       steps {
-        when() {
-          branch 'develop'
-        }
-
-        echo 'UAT Certification'
+        echo 'manual Certification'
         input 'please certify for uat'
       }
     }
